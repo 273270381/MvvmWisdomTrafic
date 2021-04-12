@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/layer_splash</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!--TabLayout 格式   app:tabGravity -->
+    <style name="tabLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="tabIndicator">@drawable/shape_tab_indicator</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabSelectedTextColor">@color/colorTabTextCheck</item>
+        <item name="tabTextColor">@color/z_white_border</item>
+        <item name="tabBackground">@drawable/ripple_tab_bg</item>
+    </style>
+</resources>

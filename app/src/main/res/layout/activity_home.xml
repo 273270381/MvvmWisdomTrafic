@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.suchness.mvvmwisdomtrafic.ui.home.HomeViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeActivity">
+        <fragment
+            android:id="@+id/nav_main_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_main"
+            android:layout_above="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <View
+            android:layout_above="@+id/btn"
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorHomeLine"
+            />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            app:menu="@menu/bottom_nav_menu"
+            android:id="@+id/btn"
+            android:layout_alignParentBottom="true"
+            app:itemIconTint="@drawable/bottom_item_icon"
+            app:itemTextColor="@drawable/bottom_item_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            />
+    </RelativeLayout>
+</layout>

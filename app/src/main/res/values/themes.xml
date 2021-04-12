@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MvvmWisdomTrafic" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--主标题颜色-->
+        <item name="colorPrimary">@color/colorTheme</item>
+        <!--状态栏颜色-->
+        <item name="colorPrimaryDark">@color/bg_color</item>
+        <item name="colorAccent">@color/colorTheme</item>
+        <item name="android:windowAnimationStyle">@style/default_animation</item>
+        <item name="android:listDivider">@drawable/shape_line</item>
+        <!--默认状态下页面的背景色-->
+        <item name="android:windowBackground">@color/bg_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 默认Activity跳转动画 -->
+    <style name="default_animation" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_up_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_up_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_down_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_down_out</item>
+    </style>
+</resources>

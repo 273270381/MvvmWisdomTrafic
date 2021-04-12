@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.suchness.mvvmwisdomtrafic.ui.file.pic.PicViewModel" />
+    </data>
+
+    <RelativeLayout
+        xmlns:binding="http://schemas.android.com/apk/res-auto"
+        android:background="@mipmap/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.suchness.mvvmwisdomtrafic.view.ScrollItemView
+            android:id="@+id/footLayout"
+            binding:onShare="@{viewModel.onShare}"
+            binding:onDelete="@{viewModel.onDelete}"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</layout>

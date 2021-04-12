@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/alarmFragment"
+    android:id="@+id/nav_main">
+
+    <fragment
+        android:id="@+id/alarmFragment"
+        tools:layout="@layout/fragment_alarm"
+        android:name="com.suchness.mvvmwisdomtrafic.ui.alarm.AlarmFragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/monitorFragment"
+        tools:layout="@layout/fragment_monitor"
+        android:name="com.suchness.mvvmwisdomtrafic.ui.monitor.MonitorFragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/fileFragment"
+        tools:layout="@layout/fragment_file"
+        android:name="com.suchness.mvvmwisdomtrafic.ui.file.FileFragment">
+        <action
+            android:id="@+id/action_fileFragment_to_fileManagerFragment"
+            app:destination="@id/fileManagerFragment"
+            app:enterAnim="@anim/h_fragment_enter"
+            app:exitAnim="@anim/h_fragment_exit"
+            app:popEnterAnim="@anim/h_fragment_pop_enter"
+            app:popExitAnim="@anim/h_fragment_pop_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fileManagerFragment"
+        tools:layout="@layout/fragment_file_manager"
+        android:name="com.suchness.mvvmwisdomtrafic.ui.file.FileManagerFragment">
+    </fragment>
+
+</navigation>

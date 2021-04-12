@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/alarmFragment"
+        android:icon="@drawable/list"
+        android:title="@string/tab_name_home"
+        />
+    <item
+        android:id="@+id/monitorFragment"
+        android:icon="@drawable/video"
+        android:title="@string/tab_name_discovery"
+        />
+    <item
+        android:id="@+id/fileFragment"
+        android:icon="@drawable/file"
+        android:title="@string/tab_file_discovery"
+        />
+</menu>
